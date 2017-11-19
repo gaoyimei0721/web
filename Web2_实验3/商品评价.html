@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>商品评价</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+	#hole{
+		width: 520px;
+		height: 400px;
+	}
+	#head{
+		width: 500px;
+		height: 20px;
+		background-color: #ccffff;
+		padding-top: 3px;
+		padding-left: 1em;
+		font-family: '宋体';
+		font-size: 12px;
+	}
+	#star{
+		margin: 10px;
+		margin-left: 15px;
+	}
+	#comment{
+		margin-left: 15px;
+	}
+	#chioce{
+		float: right;
+		margin-right: 11px;
+	}
+	</style>
+</head>
+<body>
+    <div id="hole">
+    	<div id="head">
+    		宝贝与描述相符(打分匿名)
+    	</div>
+        <div id="star">
+        	<img src="images/star0.png" onmouseover="starPic(this);" onmouseout="hide();" onclick="qd(this)">
+		    <img src="images/star0.png" onmouseover="starPic(this);" onmouseout="hide();" onclick="qd(this)">
+		    <img src="images/star0.png" onmouseover="starPic(this);" onmouseout="hide();" onclick="qd(this)">
+		    <img src="images/star0.png" onmouseover="starPic(this);" onmouseout="hide();" onclick="qd(this)">
+		    <img src="images/star0.png" onmouseover="starPic(this);" onmouseout="hide();" onclick="qd(this)">
+        </div>
+        <div id="comment">
+        	<textarea cols="67" rows="13" id="text"></textarea>
+        </div>
+        <div id="chioce">
+        	<button>公开评论<img src="images/sanjiao.png"></button>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+	var con=false;
+	var arr=['很不满意','不满意','一般','满意','非常满意'];
+	function starPic(which){
+		if(con==true) return 0;
+		var x=document.getElementsByTagName("img");
+		for(var i=0; x[i-1] != which; i++){
+			x[i].src = "images/star2.png"; 
+		}
+		if(i-1<=1){
+			for(var j=0; j<=i-1; j++){
+				x[j].src="images/star1.png";
+			}
+		}
+		document.getElementById("text").value=arr[i-1];
+	}
+	function hide(){
+		if(con==true) return 0;
+		var x=document.getElementsByTagName("img");
+		for(var i=x.length-2; i>=0; i--){
+			x[i].src="images/star0.png";
+		}
+		document.getElementById("text").value="";
+	}
+    function qd(which){
+	    con=true;
+        var x=document.getElementsByTagName("img");
+	    for (var i = 0; x[i-1] != which; i++) {
+		    x[i].src="images/star2.png";
+	    }
+	    if(i-1<=1){
+		    for(var j=0;j<=i-1;j++){
+			    x[j].src="images/star1.png";
+		    }
+	    }
+	    document.getElementById("text").value=arr[i-1];
+	}
+</script>
+</html>
