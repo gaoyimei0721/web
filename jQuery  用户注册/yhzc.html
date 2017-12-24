@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>用户注册</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){           
+            $('input[name="username"]').blur(function(){
+                nodes=document.getElementsByClassName('u');
+                if ($('input[name="username"]').val()==''){
+                    if(nodes.length==0){
+                        $('input[name="username"]').after('<b class="u" style="color:red;">用户名不能为空</b>');
+                    }
+                }
+                else{
+                    var $n=$(nodes[0]);
+                    $n.remove();
+                }
+            });
+            $('input[name="password"]').blur(function(){
+                nodes=document.getElementsByClassName('p1');
+                if ($('input[name="password"]').val()==''){
+                    if(nodes.length==0){
+                        $('input[name="password"]').after('<b class="p1" style="color:red;">密码不能为空</b>');
+                    }
+                }
+                else{
+                    var $n=$(nodes[0]);
+                    $n.remove();
+                }
+            });
+            $('#btn').click(function(){
+                nodes=document.getElementsByClassName('p2');
+                if ($('input[name="password1"]').val()!=$('input[name="password"]').val()){
+                    if(nodes.length==0){
+                        $('input[name="password1"]').after('<b class="p2" style="color:red;">两次密码不一致</b>');
+                    }
+                }
+                else{
+                    var $n=$(nodes[0]);
+                    $n.remove();
+                }
+            });
+        })
+	</script>
+	<style type="text/css">
+	table{
+		width: 480px;
+		height: 330px;
+		border: 1px solid black;
+	}
+	td,tr{
+		width: 80px;
+		border: 1px solid black;
+		height: 80px;
+	}
+	#btn{
+		float: left;margin-left: 180px;
+		margin-top: 8px;
+		width: 80px;
+		height: 50px;
+	}
+    span{
+        display: block;
+        width: 80px;
+        float: left;
+    }
+	</style>
+</head>
+<body>
+<table>
+	<tr>
+		<td colspan="1">用户名:</td>
+		<td colspan="2">
+		<form>
+			<input type="text"  name="username"  >
+			</td>
+		</form>
+	</tr>
+	<tr>
+		<td colspan="1">密码:</td>
+		<td colspan="2">
+		<form>
+			<input type="password" name="password" id="pwd" ">
+		</form>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="1">确认密码:</td>
+		<td colspan="2">
+		<form>
+		<input type="password" name="password1" id="rpwd" ">
+		</form>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3"><input type="button" value="注册" id="btn"></td>
+	</tr>
+</table>
+
+</body>
+</html>
