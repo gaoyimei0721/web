@@ -1,0 +1,116 @@
+#con{
+	width: 1200px;
+	height: 345px;
+	text-align: center;
+	margin: 0px auto;
+	white-space:nowrap; 
+	overflow: hidden;
+}
+
+#nav {
+	margin-top: 20px;
+	margin-left: 50px;
+	line-height: 24px; 
+	list-style-type: none; 
+	margin: 5px auto;
+    padding-top: 5px;
+    padding-right: 20px;
+    float: left;
+    text-align: center;
+    color: #778899;
+    font-family: arial, 宋体, serif;
+}					
+#nav a:link {
+	display: block; 
+	width: 80px;
+	text-align: center;
+	color: #666; 
+	text-decoration: none;
+}					
+#nav a:hover {
+	color: #FFF;
+	text-decoration: underline;
+	font-weight: bold;
+	background:#999;
+}
+#nav li {
+	float: left; 
+	width: 80px; 
+	background: #F0F0F0;
+}					
+#nav li ul {
+	line-height: 27px;
+	list-style-type: none;
+	text-align: left;						
+	width: 180px; 						
+	display: none;
+}
+#nav li ul li{
+	float: left; 
+	width: 100px;						
+}
+#nav li ul a:link {
+	display: block; 
+	width: 75px;
+	text-align: left;
+	padding-left: 24px;
+	color: #778899;
+}							
+#nav li ul a:hover {
+	color: #F3F3F3;
+	text-decoration: underline;
+	font-weight: normal;
+	background: #abc;
+}
+#nav li.sfhover ul {						
+	display: block;
+	position: absolute;
+}	
+
+#con img{
+	width:350px;
+	height:300px;
+	margin-left:5px;
+}
+
+#xinj{
+	width: 1200px;
+	height: 390px;
+	text-align: center;
+	margin: 0px auto;
+}
+
+#shi{
+	width: 500px;
+	height: 390px;
+	text-align: center;
+	margin: 0px auto;
+	float: left;
+}
+
+#shi p{
+	color: #778899;
+    font-size: 14px;
+	font-family: '宋体'；
+}
+
+#yhzc{
+	width: 500px;
+	height: 400px;
+	float: right;
+	padding-top: 50px;
+	margin: 0px auto;
+}
+
+#yhzc p{
+	color: #663344;
+    font-size: 18px;
+	font-family: '宋体'；
+}
+
+.s div{
+	color: #778899;
+    font-size: 14px;
+	font-family: '宋体'；
+	display: none;
+}

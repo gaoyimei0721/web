@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首页</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/autochange.js"></script>
+    <script type="text/javascript">
+		function subMenu() {
+			var liNodes = document.getElementsByTagName("li");	
+			for (var i=0; i<liNodes.length; ++i) {						
+			liNodes[i].onmouseover = function() {
+				this.className = "sfhover";
+			} 						
+			liNodes[i].onmouseout = function() {
+				this.className = "";
+			}
+			}
+		}
+		window.onload = subMenu;
+	</script>
+</head>
+<body>
+    <div id="header">
+        <div id="logo"></div>
+    	<div id="daohang">
+    	<ul id="nav">
+		<li><a href="#">主页</a>
+			<ul>
+				<li><a href="#">主页介绍</a></li>
+				<li><a href="#">公司介绍</a></li>
+				<li><a href="#">导游历程</a></li>
+			</ul>
+		</li>
+		<li><a href="#">相册</a>
+			<ul>
+				<li><a href="#">公司相册</a></li>
+				<li><a href="#">最新图集</a></li>
+				<li><a href="#">动感影集</a></li>
+			</ul>
+		</li>
+		<li><a href="#">日志</a>
+			<ul>
+				<li><a href="#">技术精粹</a></li>
+				<li><a href="#">生活点滴</a></li>
+				<li><a href="#">精彩转载</a></li>
+			</ul>
+		</li>
+		<li><a href="#">好友</a>
+			<ul>
+				<li><a href="#">好友介绍</a></li>
+				<li><a href="#">学历介绍</a></li>
+				<li><a href="#">工作历程</a></li>
+			</ul>
+		</li>
+		<li><a href="#">公司资料</a>
+			<ul>
+				<li><a href="#">资料介绍</a></li>
+				<li><a href="#">年例介绍</a></li>
+				<li><a href="#">接待历程</a></li>
+			</ul>
+		</li>
+	</ul>
+        </div>
+        <div id="search">
+        <div id="text">
+        	<form >
+        		<input type="text" style="width:140px; height:18px; background-color:#f5fffa;">
+        	</form>
+        </div>
+        <div id="sous">
+        	<form>
+        		<input type="submit" value="搜索" style="width:44px; height:24px; background-color:#696969; color:#fdf5e6; border:1px solid #f5f5f5;">
+        	</form>
+        </div>
+        <div id="dlu">
+        	<form>
+        		<input type="button" value="登录" style="width:44px; height:24px; background-color:#696969; color:#fdf5e6; border:1px solid #f5f5f5;">
+        	</form>
+        </div>
+        </div>
+        <div id="banner"></div>
+    </div>
+    <div id="xinj">
+    	<div id="shi">
+    		<p>What is a journey?</p>
+            <p>A journey is not a trip.</p>
+    		<p>It's not a vacation.
+    		<p>It's a process. A Discovery.</p>
+    		<p>It's a process of self-discovery. </p>
+   	 		<p>A journey brings us face to face with ourselves.</p>
+    		<p>A journey shows us not only the world,</p>
+    		<p>but how we fit in it.</p>
+    		<p>Does the person create the journey</p>
+    		<p>or does the journey create the person?</p>
+    		<p>The journey is life itself.</p>
+    		<p>Where will life take you?</p>
+        </div>
+        <div id="yhzc">
+        
+        	<p>用户名:&nbsp;&nbsp;&nbsp;&nbsp;<input id="userName" style="width:240px; height:25px; background-color:#f5fffa;"></p>
+			<p>密&nbsp;&nbsp;&nbsp;码:&nbsp;&nbsp;&nbsp;&nbsp;<input  class='password' type="password" style="width:240px; height:25px; background-color:#f5fffa;"></p>
+			<p>密&nbsp;&nbsp;&nbsp;码:&nbsp;&nbsp;&nbsp;&nbsp;<input class='password' type="password" style="width:240px; height:25px; background-color:#f5fffa;"></p>
+			<button onclick="sub()" style="width:64px; height:34px; background-color:#696969; color:#fdf5e6; border:1px solid #f5f5f5;">注册</button>&nbsp;&nbsp;&nbsp;&nbsp;
+			<button style="width:64px; height:34px; background-color:#696969; color:#fdf5e6; border:1px solid #f5f5f5;">登录</button>
+        </div>
+        
+    </div>
+    
+    <div id="con">
+    <span id="con1">
+    	<img src="images/timg.jpg">
+        <img src="images/ldy4.jpg">
+        <img src="images/2061.jpg">  
+        <img src="images/2062.jpg"> 
+        <img src="images/2063.jpg"> 
+        <img src="images/2067.jpg">
+    </span>
+    <span id="con2"></span>  
+    </div>
+
+    <div id="footer">
+        <div id="footer_con">
+            <ul id="ul">
+                <li id="ul_li"><a class="eleven" href="#">电子信箱</a></li>
+                <li id="ul_li"><a class="eleven" href="#">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li id="ul_li"><a class="eleven" href="#">设为首页</a></li>
+                <li id="ul_li"><a class="eleven" href="#">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li id="ul_li"><a class="eleven" href="#">在线调查</a></li>
+                <li id="ul_li"><a class="eleven" href="#">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li id="ul_li"><a class="eleven" href="#">加入收藏</a></li>
+                <li id="ul_li"><a class="eleven" href="#">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li id="ul_li"><a class="eleven" href="#">网站地图</a></li>
+                <li id="ul_li"><a class="eleven" href="#">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li id="ul_li"><a class="eleven" href="#">关于我们</a></li><br/>
+            </ul>
+            <div id="footer_img">
+                <img src="images/line.jpg">
+            </div>
+            <div class="fp">
+                <p id="footer_p">Copyright@2013-2014 Hebshufajia.com, All Rights Reserved</p>
+                <p id="footer_p">冀ICP备05067795号 冀公网安备110402440008号</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

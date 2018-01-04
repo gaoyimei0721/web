@@ -1,0 +1,133 @@
+body{
+	margin: 0px;
+	background-image: url(images/bodybg.png);
+	color: #522a06;
+    font-size: 12px;
+	font-family: '宋体'；
+}
+
+#header{
+	height: 250px;
+	width: 1240px;
+    margin: 0px auto;
+}
+
+#banner{
+    height: 200px;
+    width: 1200px;
+    background-image: url(images/banner3.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	margin-left: 20px;
+}
+
+#daohang{
+	font-size: 14px;
+    height: 50px;
+    width: 560px;
+    margin: 5px auto;
+    padding-top: 5px;
+    padding-right: 20px;
+    float: left;
+    text-align: center;
+}
+
+#logo{
+	height: 40px;
+	width: 180px;
+	background-image: url(images/logo.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: 40px;
+	margin-top: 10px
+	padding-left: 20px;
+	padding-top: 10px;
+	float: left;
+}
+
+a.one:link{color: #b0c4de;text-decoration: none;}
+a.one:visited{color: #b0c4de;text-decoration: none;}
+a.one:hover{color: #b0c4de;text-decoration: underline;}
+
+a.two:link{color: #b0c4de;text-decoration: none;}
+a.two:visited{color: #778899;text-decoration: none;}
+a.two:hover{color: #d2b48c;text-decoration: underline;}
+
+a.three:link{color: #b0c4de;text-decoration: none;}
+a.three:visited{color: #778899;text-decoration: none;}
+a.three:hover{color: #d2b48c;text-decoration: underline;}
+
+a.four:link{color: #b0c4de;text-decoration: none;}
+a.four:visited{color: #778899;text-decoration: none;}
+a.four:hover{color: #d2b48c;text-decoration: underline;}
+
+a.five:link{color: #b0c4de;text-decoration: none;}
+a.five:visited{color: #778899;text-decoration: none;}
+a.five:hover{color: #d2b48c;text-decoration: underline;}
+
+a.six:link{color: #b0c4de;text-decoration: none;}
+a.six:visited{color: #778899;text-decoration: none;}
+a.six:hover{color: #d2b48c;text-decoration: underline;}
+
+a.eleven:link{color: #522a06;text-decoration: none;}
+a.eleven:visited{color: #522a06;text-decoration: none;}
+
+#search{
+	width: 350px;
+    height: 35px;
+    float: left;
+    margin-top: 5px;
+    padding-top: 5px;  
+}
+
+#text{
+	float: left;
+	margin-left: 45px;	
+}
+
+#sous{
+	float: left;	
+}
+
+#dlu{
+	width: 100px;
+	float: left;
+	text-align: center;
+}
+
+#footer{
+	height: 125px;
+	
+}
+	
+#ul{
+	float: left;
+}
+
+#ul_li{
+	float: left;
+	list-style: none;
+}
+
+#footer_con{
+	width: 600px;
+	font-weight: bold;
+	margin: 0px auto;
+	padding-left: 50px;
+}
+
+#footer_img{
+	clear: both;
+	margin-top: 5px;
+	margin: 0 auto;
+	padding-left: 10px;
+}
+
+#footer_p{
+	text-align: center;
+}
+
+.fp{
+	margin-right: 100px;
+}
